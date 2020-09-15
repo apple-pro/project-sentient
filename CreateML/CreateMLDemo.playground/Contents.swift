@@ -19,3 +19,11 @@ let evaluationAccuracy = (1.0 - evaluationMetrics.classificationError) * 100
 //save our model to a CoreML model
 let metadata = MLModelMetadata(author: "lbibera", shortDescription: "My cool sentiment analyzer", version: "1.0")
 try! sentimentClassifier.write(to: URL(fileURLWithPath: modelOutputPath))
+
+//try using our model:
+
+try sentimentClassifier.prediction(from: "@Apple is awesome")
+
+try sentimentClassifier.prediction(from: "@Apple is crap")
+
+try sentimentClassifier.prediction(from: "@Apple is a piece of shit")
