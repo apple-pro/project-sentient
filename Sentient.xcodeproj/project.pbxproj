@@ -13,6 +13,7 @@
 		F0442DC42510D40800167EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0442DC22510D40800167EDC /* Main.storyboard */; };
 		F0442DC62510D40900167EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0442DC52510D40900167EDC /* Assets.xcassets */; };
 		F0442DC92510D40900167EDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0442DC72510D40900167EDC /* LaunchScreen.storyboard */; };
+		F0442DD12510DECC00167EDC /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F0442DD02510DECC00167EDC /* TweetSentimentClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F0442DC52510D40900167EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0442DC82510D40900167EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0442DCA2510D40900167EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0442DD02510DECC00167EDC /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = TweetSentimentClassifier.mlmodel; path = CreateML/TweetSentimentClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F0442DC22510D40800167EDC /* Main.storyboard */,
 				F0442DC52510D40900167EDC /* Assets.xcassets */,
 				F0442DC72510D40900167EDC /* LaunchScreen.storyboard */,
+				F0442DD02510DECC00167EDC /* TweetSentimentClassifier.mlmodel */,
 				F0442DCA2510D40900167EDC /* Info.plist */,
 			);
 			path = Sentient;
@@ -140,6 +143,7 @@
 			files = (
 				F0442DC12510D40800167EDC /* ViewController.swift in Sources */,
 				F0442DBD2510D40800167EDC /* AppDelegate.swift in Sources */,
+				F0442DD12510DECC00167EDC /* TweetSentimentClassifier.mlmodel in Sources */,
 				F0442DBF2510D40800167EDC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

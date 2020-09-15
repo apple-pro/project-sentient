@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tell me something..." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FmX-9X-fS0">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tell me something..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FmX-9X-fS0">
                                 <rect key="frame" x="20" y="436" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -27,6 +27,9 @@
                                 <state key="normal" title="Predict!">
                                     <color key="titleColor" name="TextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="predict:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYl-Ou-aBu"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8I-Cs-rV0">
                                 <rect key="frame" x="20" y="44" width="374" height="384"/>
@@ -58,6 +61,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="tCR-Sm-IGc" id="TPe-qx-s7W"/>
+                        <outlet property="textInput" destination="FmX-9X-fS0" id="FgT-dd-VaU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
